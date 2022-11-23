@@ -5,3 +5,22 @@
     text-decoration: none;
     list-style: none;
 }
+
+a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+h1{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    width: 500px;
+}
+
+h2{
+    color: #fff;
+}

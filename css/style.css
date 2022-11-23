@@ -1,5 +1,122 @@
-a{
-    color: #fff;
-    text-decoration: none;
+/********* HEADER *********/
+
+html{
+    scroll-behavior: smooth;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-logo{
+    font-size: 24px;
+    letter-spacing: 4px;
+
+}
+
+.img-logo{
+    display: flex;
+    height: 115px;
+    width: 150px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 5%;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: #FF2727;
+    text-transform: uppercase;
+    height: 13vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+section{
+    height: 100vh;
+}
+
+
+/********* HEADER MOBILE *********/
+
+/* .mobile-menu{
+    display: flex;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+   */
+
+/********* SECTIONS *********/
+.container-apresentacao{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0.01%, rgba(0, 0, 0, 0) 100%), url("../assents/img/img-section-apresentacao.jpg") no-repeat ;
+    background-size: cover;
+    height: 100vh;
+}
+
+.laPizzaria{
+    display: flex;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    padding-left: 5%;
+    line-height: 60px;
+}
+
+.text-welcome{
+    display: flex;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding-left: 5%;
+    text-transform: uppercase;
+}
+
+.container-apresentacao p{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    padding-left: 5%;
+    text-align: center;
+}
+
+.text-apresentacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-red{
+    color: #FF2727;
+}
+
+
+
+/********* FOOTER *********/
