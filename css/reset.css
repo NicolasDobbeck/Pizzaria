@@ -24,3 +24,15 @@ p{
 h2{
     color: #fff;
 }
+
+html ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  html ::-webkit-scrollbar-thumb {
+    background: #FF2727;
+  }
+  
+  html ::-webkit-scrollbar-track {
+    background: #ededed;
+  }
