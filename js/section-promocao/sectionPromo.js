@@ -18,7 +18,7 @@ pizza.forEach(item => {
     const card = document.createElement('.card-promocoes')
 
     card.setAttribute('nome', item.nome)
-    card.setAttribute('descricao', item.ingredientes)
+    card.setAttribute('descricao', item.descricao)
     card.setAttribute('imagem', item.image)
     card.setAttribute('preco', item.preco)
 

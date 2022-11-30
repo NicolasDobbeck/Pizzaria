@@ -72,6 +72,7 @@ section{
 /********* SECTIONS *********/
 
 /* APRESENTAÇÃO */
+
 .container-apresentacao{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0.01%, rgba(0, 0, 0, 0) 100%), url("../assents/img/img-section-apresentacao.jpg") no-repeat ;
     background-size: cover;
@@ -122,6 +123,7 @@ section{
 }
 
 /* PROMOÇÃO */
+
 .container-promocao{
     background-color: #EBE7DB;
 }
@@ -175,4 +177,193 @@ section{
     margin-left: 10px;
     margin-top: 5px;
 }
+
+/* CONTATO */
+
+.container-contato{
+    display: flex;
+    background: url('../assents/img/back-contact.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    display: flex;
+    height: 600px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-contato{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.entre-contato{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 8%;
+}
+
+.atendelo-contato{
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.inputs-contato{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.nome-contato{
+    height: 40px;
+    width: 300px;
+}
+
+.email-contato{
+    height: 40px;
+    width: 300px;
+}
+
+.celular-contato{
+    height: 40px;
+    width: 300px;
+}
+
+.telefone-contato{
+    height: 40px;
+    width: 300px;
+}
+
+.input-checkbox{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.text-input{
+    text-transform: uppercase;
+}
+
+.input-message{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input{
+    font-family: 'Inter', sans-serif;
+    left: 10px;
+}
+
 /********* FOOTER *********/
+
+footer{
+    display: flex;
+    height: 220px;
+    background-color: #FF2727;
+    padding: 30px;
+    align-items: center;
+    
+}
+
+.footer-pizzaria{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.title-footer{
+    width: 50px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.cardapio-footer{
+    display: flex;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.sobre-footer{
+    display: flex;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.atendimento-footer{
+    display: flex;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.localizacao-footer{
+    display: flex;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+/********* BACK TO TOP *********/
+
+.button-backtop{
+    display: flex;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 50px;
+    right: 30px;
+    border-radius: 50px;
+    background-color: #EBE7DB;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF2727;
+    transition-duration: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.button-backtop:hover{
+    background-color: #000;
+}
+
+.button-backtop i {
+    color: #000;
+}
+
+.button-backtop:hover i {
+    color: #FF2727;
+}
+

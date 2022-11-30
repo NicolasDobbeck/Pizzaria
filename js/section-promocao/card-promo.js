@@ -3,19 +3,19 @@ class card extends HTMLElement{
         super();
         this.shadow = this.attachShadow({mode:'open'});
         this.nome = 'Nome do Produto'
-        this.image = 'https://img.besthqwallpapers.com/Uploads/8-3-2020/124121/meat-pizza-fast-food-pizza-4k-baking.jpg'
-        this.bgcolor = 'white'
+        this.image = 'Sem imagem'
+        this.bgcolor = '#FFF'
         this.preco = ''
-        this.ingredientes = ''
+        this.descricao = ''
         this.id = ''
     }
 
     static get observedAttributes(){
-        return ['nome', 'image', 'bgcolor', 'preco', 'ingredientes', 'id']
+        return ['nome', 'image', 'bgcolor', 'preco', 'descricao', 'id']
     }
 
     attributeChangedCallback(nameAttr, oldValue, newValue){
-        this[nameAttr] = newValue
+        // this[nameAttr] = newValue
 
         if (nameAttr === 'nome'){
             this.nome = newValue
@@ -25,8 +25,8 @@ class card extends HTMLElement{
             this.bgcolor = newValue
         }else if(nameAttr === 'preco'){
             this.preco = newValue
-        }else if(nameAttr === 'ingredientes'){
-            this.ingredientes = newValue
+        }else if(nameAttr === 'descricao'){
+            this.descricao = newValue
         }else if(nameAttr === 'id'){
             this.id = newValue
         }
@@ -97,11 +97,11 @@ class card extends HTMLElement{
         const card = document.createElement('div')
         card.classList.add('card-pizza')
         card.innerHTML = `
-        <img src="../assents/img/meat-pizza-fast-food-pizza-4k-baking.jpg" alt="">
-        <h1 class="card-titulo">Mussarela </h1>
-        <span class="card-descricao">Queijo e Tomate</span>
+        <img src="${this.image}" alt="">
+        <h1 class="card-titulo">${this.nome}</h1>
+        <span class="card-descricao">${this.descricao}</span>
         <div class="container-price">
-            <span class="price">R$30,99</span>
+            <span class="price">${this.preco}</span>
         </div>
         `
         return card

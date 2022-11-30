@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,400&display=swap" rel="stylesheet">
     <script src="../js/mobile-navbar.js" defer></script>
+    <script src="https://kit.fontawesome.com/5f2b9e6a48.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../assents/img/img-logo2.png" type="image/x-icon">
     <title>La Pizzaria</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="logo">
                 <img class="img-logo" src="../assents/img/img-logo2.png" alt="">
@@ -67,14 +68,6 @@
                 <card-promocoes></card-promocoes>
                 <card-promocoes></card-promocoes> -->
             </div>
-            <!-- <div class="card__pizza">
-                <img src="../assents/img/meat-pizza-fast-food-pizza-4k-baking.jpg" alt="">
-                <h1 class="card-titulo">Mussarela </h1>
-                <span class="card-descricao">Queijo e Tomate</span>
-                <div class="container-price">
-                    <span class="price">R$30,99</span>
-                </div>
-            </div> -->
         </section>
         <section class="container-cardapio" id="cardapio">
             <h2>Cardapio aqui</h2>
@@ -83,11 +76,72 @@
             <h2>Servicos aqui</h2>
         </section>
         <section class="container-contato" id="contato">
-            <h2>Contato aqui</h2>
+            <div class="contato">
+                <div class="title-contato">
+                    <span class="entre-contato">Entre em Contato</span>
+                    <span class="atendelo-contato">É um prazer atende-lo</span>
+                </div>
+                <div class="inputs-contato">
+                    <input class="nome-contato" type="text" placeholder="NOME">
+                    <input class="email-contato" type="email" placeholder="EMAIL">
+                    <input class="celular-contato" type="tel" placeholder="CELULAR">
+                    <input class="telefone-contato" type="tel" placeholder="TELEFONE">
+                </div>
+                <div class="input-checkbox">
+                    <div class="text-input">
+                        <span>Sugestão</span>
+                        <span>Crítica</span>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+                <div class="input-message">
+                    <span>Mensagem:</span>
+                    <input class="mensagem" type="text">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer-pizzaria">
+            <div class="title-footer">
+                <span>
+                    la pizzaria
+                </span>
+            </div>
+            <div class="cardapio-footer">
+                <a href="#cardapio">CARDÁPIO</a>
+                <ul>
+                    <li>Pizzas</li>
+                    <li>Bebidas</li>
+                </ul>
+            </div>
+            <div class="sobre-footer">
+                <a href="#apresentacao">SOBRE NÓS</a>
+                <ul>
+                    <li>Apresentação</li>
+                </ul>
+            </div>
+            <div class="atendimento-footer">
+                <a href="#contato">ATENDIMENTO AO CLIENTE</a>
+                <ul>
+                    <li>Fale Conosco</li>
+                </ul>
+            </div>
+            <div class="localizacao-footer">
+                <span>
+                    LOCALIZAÇÃO
+                </span>
+                <ul>
+                    <li>Av. Luis Carlos Berrini, nº 666</li>
+                </ul>
+            </div>
+        </div>
     </footer>
+    <a class="button-backtop" href="#header">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 </body>
 </html>
