@@ -1,5 +1,4 @@
-/********* HEADER *********/
-
+/**************************************************** HEADER ****************************************************/
 html{
     scroll-behavior: smooth;
 }
@@ -71,7 +70,12 @@ section{
 
 /********* SECTIONS *********/
 
-/* APRESENTAÇÃO */
+/**************************************************** APRESENTAÇÃO ****************************************************/
+/*
+
+TODOS OS COMPONENTES DE APRESENTAÇÃO
+
+*/
 
 .container-apresentacao{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0.01%, rgba(0, 0, 0, 0) 100%), url("../assents/img/img-section-apresentacao.jpg") no-repeat ;
@@ -122,7 +126,12 @@ section{
     color: #FF2727;
 }
 
-/* PROMOÇÃO */
+/**************************************************** PROMOÇÃO ****************************************************/
+/*
+
+TODOS OS COMPONENTES DE PROMOÇÃO
+
+*/
 
 .container-promocao{
     background-color: #EBE7DB;
@@ -178,7 +187,132 @@ section{
     margin-top: 5px;
 }
 
-/* CONTATO */
+/**************************************************** CARDÁPIO ****************************************************/
+/*
+
+TODOS OS COMPONENTES DE CARDÁPIO
+
+*/
+
+.title-cardapio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 100px;
+}
+
+.line-cardapio1{
+    display: flex;
+    width: 480px;
+    height: 0px;
+    background-color: #000;
+    border: solid 1px #000;
+}
+
+.elipse1{
+    height: 30px;
+    width: 30px;
+    border: solid 2px #000;
+    border-radius: 50%;
+}
+
+.elipse2{
+    height: 30px;
+    width: 30px;
+    border: solid 2px #000;
+    border-radius: 50%;
+}
+
+.line-cardapio2{
+    display: flex;
+    width: 480px;
+    height: 0px;
+    border: solid 1px #000;
+}
+
+.text-cardapio{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+/* SERVIÇOS */
+
+.container-servicos{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+}
+
+/* .servico{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: violet;
+} */
+
+/****** CONTAINER FUNCIONAMENTO ******/
+
+.container-como_funciona{
+    display: flex;
+    height: 225px;
+    width: 100%;
+    background-color: #FFF;
+    justify-content: space-around;
+}
+
+.passo-um{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-passo-um{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+.passo-dois{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-passo-dois{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+.passo-tres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-passo-tres{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+.passo-quatro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-passo-quatro{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #B9B9B9;
+}
+
+/**************************************************** CONTATO ****************************************************/
 
 .container-contato{
     display: flex;
@@ -251,8 +385,18 @@ section{
 
 .input-checkbox{
     display: flex;
-    
     flex-direction: column;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.checkbox input{
+    height: 30px;
+    width: 30px;
 }
 
 .text-input{
@@ -262,16 +406,21 @@ section{
 .input-message{
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
-
+.mensagem{
+    height: 150px;
+    width: 300px;
+}
 
 input{
     font-family: 'Inter', sans-serif;
     left: 10px;
 }
 
-/********* FOOTER *********/
+/**************************************************** FOOTER ****************************************************/
 
 footer{
     display: flex;
@@ -342,8 +491,8 @@ footer{
 .button-backtop{
     display: flex;
     position: fixed;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     bottom: 50px;
     right: 30px;
     border-radius: 50px;
@@ -367,3 +516,40 @@ footer{
     color: #FF2727;
 }
 
+/* teste */
+
+.card{
+    display: flex;
+    height: 150px;
+    width: 600px;
+    background-color: #EBE7DB;
+    padding: 10px;
+    gap: 15px;
+    align-items: center;
+    margin-left: 40px;
+    padding-left: 25px;
+}
+
+.text__pizza{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.title__pizza{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.descr__pizza{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+.price__pizza{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Inter', sans-serif;
+}
