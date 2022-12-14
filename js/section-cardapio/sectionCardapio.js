@@ -1,30 +1,42 @@
 'use strict'
 
-import './card-cardapio'
+import './card-cardapio.js'
 
-const fetchCardPizza = async function () {
-    const url = `` 
+export const fetchCardPizza = async function () {
+    const url = `http://localhost:5050/v1/pizzaComponentes` 
     const response = await fetch(url);
     const data = await response.json()
 
     return data
 }
 
-const card = await fetchCardPizza();
-console.log(card)
+const {pizzaComponentes}  = await fetchCardPizza();
+console.log(pizzaComponentes)
+const container = document.querySelector('.container-card-pizza')
+const cardPizza = document.createElement('card-pizza')
+const ingredientes = pizzaComponentes.map(pizza => {
+    console.log(pizza.ingrediente);
+    return pizza.ingrediente;
+}).join(', ');
 
-card.forEach(item => {
-    const container = document.querySelector('.container-card-pizza')
-    const cardPizza = document.createElement('.card-pizza')
+const tamanho = pizzaComponentes.map(item => {
+    return item.tamanho
+})
+console.log(tamanho);
 
-    cardPizza.setAttribute('nome', item.nome)
-    cardPizza.setAttribute('descricao', item.descricao)
-    cardPizza.setAttribute('preco1', item.preco1)
+console.log(ingredientes);
+
+cardPizza.setAttribute('descricao', ingredientes)
+
+pizzaComponentes.forEach(item => {
+    cardPizza.setAttribute('nome', item.sabor)
+    
+    cardPizza.setAttribute('preco1', item.preco)
     cardPizza.setAttribute('preco2', item.preco2)
     cardPizza.setAttribute('preco3', item.preco3)
-    cardPizza.setAttribute('Broto', item.tamanhoBroto)
-    cardPizza.setAttribute('Medio', item.tamanhoMedio)
-    cardPizza.setAttribute('Grande', item.tamanhoGrande)
-
-    container.appendChild(cardPizza)
+    cardPizza.setAttribute('Broto', item.tamanho)
+    cardPizza.setAttribute('Medio', item.tamanho)
+    cardPizza.setAttribute('Grande', item.tamanho)
 });
+
+container.appendChild(cardPizza)

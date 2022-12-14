@@ -1,4 +1,4 @@
-class cardPizza extends HTMLElement{
+class CardPizza extends HTMLElement{
     constructor(){
         //Sem este componente os metodos declarados lá 
         //em cima nao serao puxados (obrigatório)
@@ -14,7 +14,6 @@ class cardPizza extends HTMLElement{
         this.tamanhoMedio = ''
         this.tamanhoGrande = ''
         this.bgcolor = '#EBE7DB'
-        this.id = ''
     }
 
     static get observedAttributes(){
@@ -35,8 +34,6 @@ class cardPizza extends HTMLElement{
             this.preco3 = newValue
         }else if(nameAttr === 'bgcolor'){
             this.bgcolor = newValue
-        }else if(nameAttr === 'id'){
-            this.id = newValue
         }
     }
 
@@ -110,4 +107,4 @@ class cardPizza extends HTMLElement{
 }
 
 //Para a web entender esse componente
-customElements.define('card-pizza', cardPizza)
+customElements.define('card-pizza', CardPizza)

@@ -607,3 +607,8 @@ footer{
     margin-top: 5px;
 }
 
+
+.container-cards{
+    display: flex;
+    
+}
