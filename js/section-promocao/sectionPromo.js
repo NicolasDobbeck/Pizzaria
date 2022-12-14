@@ -2,7 +2,7 @@
 
 import './card-promo.js'
 
-const fetchApiPizza = async function () {
+const fetchCardPromo = async function () {
     const url = `` 
     const response = await fetch(url);
     const data = await response.json()
@@ -10,7 +10,7 @@ const fetchApiPizza = async function () {
     return data
 }
 
-const pizza = await fetchApiPizza();
+const pizza = await fetchCardPromo();
 console.log(pizza)
 
 pizza.forEach(item => {
